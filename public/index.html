@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--App-->
+
+    <div class="app">
+
+        <!--Join Scren region-->
+
+            <div class="screen join-screen active">
+
+                <div class="form">
+
+                    <h2>PatriChat &#x1F1E7;&#x1F1F7;</h2>
+                        <p><i>O maior chat do Brasil.</p></i>
+                    <div class="form-input">
+                        <label>Seu nome</label>
+                        <input type="text" id="username" placeholder="Patriota">
+                    </div>
+
+                    <label for="room">Sala</label>
+                    <select name="room-name" id="room">
+                        <option value="alienigenas">Intervenção alienígena</option>
+                    </select>
+
+                    <div class="form-input">
+                        <button id="join-user">Entrar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--End Join Scren region-->
+
+        <!--Chat Scren region-->
+
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">Chat &#x1F1E7;&#x1F1F7;</div>
+                <div class="logo">Intervenção Alienígena</div>
+                <button id="exit-chat">Sair da sala</button>
+            </div>
+
+             <!--messages-->
+            <div class="messages">
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Pedro</div>
+                        <div class="text">Tem que abduzir</div>
+                        <span class="time">09:03</span>
+                    </div>
+                </div>
+                
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Jaílson</div>
+                        <div class="text">Comigo quem quiser, contra mim quem puder.</div>
+                        <span class="time">09:03</span>
+                    </div>
+                </div>
+
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Netinho</div>
+                        <div class="text">Eles vao vir!</div>
+                        <span class="time">09:12</span>
+                    </div>
+                </div>
+
+                <div class="message other-message">   
+                    <div>
+                        <div class="name">Dani</div>
+                        <div class="text">Se acostuman</div>
+                        <span class="time">09:17</span>
+                    </div>
+                </div>
+                
+            </div>
+             <!--End messages-->
+
+             <!--Type Box-->
+            <div class="typebox">
+                <input type="text" id="message-input"><br>
+                <button id="send-message">Send</button>
+            </div>
+             <!--End Type box-->
+        </div>
+        <!--End Chat Scren region-->
+
+    </div>
+    <!--End App-->
+
+    <!--Scripts Region-->
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+
+    <!--End Scripts Region-->
+</body>
+</html>
